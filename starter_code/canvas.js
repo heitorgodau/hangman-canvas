@@ -46,8 +46,8 @@ class HangmanCanvas {
     this.ctx.beginPath();
     switch (shape) {
       case 'head':
-        this.ctx.beginPath();
         this.ctx.arc(450, 330, 30, 0, 7);
+        this.ctx.stroke();
         this.ctx.closePath();
         break;
       case 'body':
@@ -57,31 +57,27 @@ class HangmanCanvas {
         this.ctx.stroke();
         this.ctx.closePath();
         break;
-      case 'left-arm':
+      case 'arms':
         this.ctx.beginPath();
         this.ctx.moveTo(450, 370);
         this.ctx.lineTo(400, 410);
         this.ctx.stroke();
         this.ctx.closePath();
-        break;
-      case 'right-arm':
         this.ctx.beginPath();
         this.ctx.moveTo(450, 370);
         this.ctx.lineTo(500, 410);
         this.ctx.stroke();
         this.ctx.closePath();
         break;
-      case 'left-leg':
+      case 'legs':
         this.ctx.beginPath();
-        this.ctx.moveTo(500, 405);
-        this.ctx.lineTo(400, 505);
+        this.ctx.moveTo(450, 450);
+        this.ctx.lineTo(435, 530);
         this.ctx.stroke();
         this.ctx.closePath();
-        break;
-      case 'rigth-leg':
         this.ctx.beginPath();
-        this.ctx.moveTo(500, 405);
-        this.ctx.lineTo(600, 505);
+        this.ctx.moveTo(450, 450);
+        this.ctx.lineTo(465, 530);
         this.ctx.stroke();
         this.ctx.closePath();
         break;

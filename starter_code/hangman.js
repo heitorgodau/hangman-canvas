@@ -67,10 +67,10 @@ class Hangman {
         hangmanCanvas.drawHangman('head');
         break;
       case 6:
-        hangmanCanvas.drawHangman('left-arm');
+        hangmanCanvas.drawHangman('body');
         break;
       case 4:
-        hangmanCanvas.drawHangman('right-arm');
+        hangmanCanvas.drawHangman('arms');
         break;
       case 2:
         hangmanCanvas.drawHangman('legs');
