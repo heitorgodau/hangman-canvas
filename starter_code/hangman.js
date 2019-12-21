@@ -90,8 +90,8 @@ document.getElementById('start-game-button').onclick = function () {
 
 
 document.onkeydown = function (e) {
-  const key = e.key.toUpperCase();
-  const keyCode = e.keyCode;
+  const { key, keyCode } = e;
+  key = key.toUpperCase();
   if (hangman.checkIfLetter(keyCode)) {
     hangman.checkClickedLetters(key)
   }
